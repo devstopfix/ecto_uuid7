@@ -4,10 +4,18 @@ defmodule Ecto.UUID7.MixProject do
   def project do
     [
       app: :ecto_uuid7,
-      version: "1.0.0",
-      elixir: "~> 1.14",
+      deps: deps(),
+      elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      package: [
+        licenses: ["MIT"],
+        links: %{
+          "Docs" => "https://hexdocs.pm/ecto_uuid7",
+          "GitHub" => "https://github.com/devstopfix/ecto_uuid7"
+        }
+      ],
+      source_url: "https://github.com/devstopfix/ecto_uuid7",
+      version: "1.0.0"
     ]
   end
 
