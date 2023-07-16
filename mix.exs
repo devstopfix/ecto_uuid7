@@ -5,6 +5,7 @@ defmodule Ecto.UUID7.MixProject do
     [
       app: :ecto_uuid7,
       deps: deps(),
+      description: "Ecto type for UUID v7",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       package: [
@@ -28,7 +29,8 @@ defmodule Ecto.UUID7.MixProject do
   defp deps do
     [
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:ecto, "~> 3.0"}
+      {:ecto, "~> 3.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 end
