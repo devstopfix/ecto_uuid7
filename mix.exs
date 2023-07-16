@@ -27,6 +27,7 @@ defmodule Ecto.UUID7.MixProject do
 
   defp deps do
     [
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:ecto, "~> 3.0"}
     ]
   end
